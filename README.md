@@ -7,7 +7,7 @@ There are 7 members in our team: Nilin (Leader), Yuma(Support), Kimhouy, Bunthai
 [issue4: Porming lambo toy]
 [issue6: Lyeng]
 [issue7: Bunthai]
-[issue8: Rojeth]
+[issue8: Rojet]
 [issue9]: YUMA
 
 > > > > > > > develop
