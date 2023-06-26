@@ -1,2 +1,2 @@
 # ANB_Team_CODE404
-There are 7 members in our team: Nilin (Leader), Yuma(Support), Kimhouy, Bunthai, Lyeng, Pormenh and Key
+There are 7 members in our team: Nilin (Leader), Yuma(Support), Kimhouy, Bunthai, Lyeng, Pormenh, Key and Rojeth
