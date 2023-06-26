@@ -9,5 +9,5 @@ There are 7 members in our team: Nilin (Leader), Yuma(Support), Kimhouy, Bunthai
 [issue7: Bunthai]
 [issue8: Rojet]
 [issue9]: YUMA
-
+[issue5]: Limkhy
 > > > > > > > develop
