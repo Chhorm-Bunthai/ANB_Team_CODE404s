@@ -1,89 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>Component</title>
 
     <link rel="stylesheet" href="./style.css" />
-  </head>
+</head>
 
-  <body>
-    <!-- /////////////////////////////////////////////////// Yuma   ///////////////////////////////////////////////////-->
 
+<body>
     <!-- /////////////////////////////////////////////////// Rojeth   /////////////////////////////////////////////////// -->
-
     <!-- Component Header -->
     <header>
-      <!-- logo and button -->
-      <nav class="navbar-top">
-        <div class="logo">
-          <a href="#default"><img src="./img/Logo.svg" alt="" /></a>
-        </div>
-        <div class="dropdown">
-          <button class="search-btn">
-            <img src="./img/feSearch2 (1).svg" alt="" />
-          </button>
-          <button class="ham-btn" onclick="on()" onclick="off()">
-            <img src="./img/Group 108.svg" alt="" />
-          </button>
-        </div>
-      </nav>
-
-      <!-- dropdown overlay-->
-      <section class="drp-2">
-        <div class="sidebar" id="overlay">
-          <div class="top-menu">
-            <img src="./img/Logo.svg" alt="" class="sidebar-logo" />
-            <button class="close-btn" onclick="off()">
-              <img src="./img/Vector (1).svg" alt="" />
-            </button>
-          </div>
-
-          <ul>
-            <div class="list-each-link">
-              <li class=""><a href="#">Home</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
+        <!-- logo and button -->
+        <nav class="navbar-top">
+            <div class="logo">
+                <a href="#default"><img src="./img/Logo.svg" alt="" /></a>
             </div>
-
-            <div class="list-each-link">
-              <li class=""><a href="#">About Us</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
+            <div class="dropdown">
+                <button class="search-btn">
+                    <img src="./img/feSearch2 (1).svg" alt="" />
+                </button>
+                <button class="ham-btn" onclick="on()" onclick="off()">
+                    <img src="./img/Group 108.svg" alt="" />
+                </button>
             </div>
+        </nav>
 
-            <div class="list-each-link">
-              <li class=""><a href="#">Trust Us</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
-            </div>
+        <!-- dropdown overlay-->
+        <section class="drp-2">
+            <div class="sidebar" id="overlay">
+                <div class="top-menu">
+                    <img src="./img/Logo.svg" alt="" class="sidebar-logo" />
+                    <button class="close-btn" onclick="off()">
+                        <img src="./img/Vector (1).svg" alt="" />
+                    </button>
+                </div>
 
-            <div class="list-each-link">
-              <li class=""><a href="#">Service</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
-            </div>
+                <ul class="rojeth">
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Home</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
 
-            <div class="list-each-link">
-              <li class=""><a href="#">Hospital</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
-            </div>
+                    <div class="list-each-link">
+                        <li class=""><a href="#">About Us</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
 
-            <div class="list-each-link">
-              <li class=""><a href="#">Interpreter</a></li>
-              <button><img src="./img/arrow.svg" alt="" /></button>
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Trust Us</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Service</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Hospital</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Interpreter</a></li>
+                        <button><img src="./img/arrow.svg" alt="" /></button>
+                    </div>
+                </ul>
             </div>
-          </ul>
-        </div>
-      </section>
+        </section>
     </header>
 
 
 
+    <!-- /////////////////////////////////////////////////// Yuma   ///////////////////////////////////////////////////-->
+
+    <!-- ---------------------------------- Button  ----------------------------------  -->
+    <div class="yuma">
+        <!-- create three primary button -->
+        <div class="button-container">
+            <h2> Button </h2>
+            <div class="button-1">
+                <button class="button-primary small">Primary Small</button>
+                <button class="button-primary medium">Primary Medium</button>
+                <button class="button-primary large">Primary Large</button>
+            </div>
 
 
+            <!-- create three secondary buttons -->
+            <div class="button-2">
+                <button class="button-secondary small"> Small</button>
+                <button class="button-secondary medium">Secondary Medium</button>
+                <button class="button-secondary large">secondary Large</button>
+
+            </div>
+
+            <!-- create three tertiary buttons -->
+            <div class="button-3">
+                <button class="button-tertiary small">Teriary Small</button>
+                <button class="button-tertiary medium">Tertiary Medium</button>
+                <button class="button-tertiary large">Tertiary Large</button>
+            </div>
+
+            <!-- outline button -->
+            <div class="button-4">
+                <button class="button-primary large outline">Outline Primary</button>
+                <button class="button-secondary large outline">Outline Secondary</button>
+                <button class="button-tertiary large outline">Outline Tertiary</button>
+            </div>
+
+            <!-- ---------------------------------- Text Field  ----------------------------------  -->
+            <div class="input-bx">
+                <input type="text" required="required" />
+                <span>Username</span>
+            </div>
+            <div class="input-bx">
+                <input type="password" required="required" />
+                <span>Password</span>
+            </div>
+            <!-- -------------------------------- Calender -------------------------------->
+            <div class="c">
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
+</body>
+<script src="index.js"></script>
 
-    <script src="./index.js"></script>
-  </body>
 </html>
