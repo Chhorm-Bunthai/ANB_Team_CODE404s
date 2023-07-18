@@ -12,3 +12,155 @@
 
 
 /* ////////////////////////////////////////// Rojeth  //////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap');
+
+
+body {
+    background-color: #99a6b8;
+    margin: 0px;
+    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
+}
+
+
+.navbar-top {
+    height: 70px;
+    background-color: #4C9AFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    
+}
+
+.dropdown {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.dropdown .ham-btn {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+
+}
+
+.dropdown .search-btn {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.sidebar {
+    background-color: #587DBD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    
+}
+
+ul{
+    display: flex ;
+    flex-direction: column;
+    padding: 0px;
+    list-style: none;
+
+}
+
+.sidebar .list-each-link:hover{
+    list-style: none;
+    background-color: white;
+
+}
+
+.list-each-link a {
+    text-decoration: none;
+    text-align: right;
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    padding: 25px;
+    padding-left: 50px;
+    height: 100%;
+    color: white;
+    font-size: large;
+
+}
+
+.list-each-link {
+
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.list-each-link button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+
+.sidebar.active {
+    opacity: 1;
+    pointer-events: all;
+   
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 585px; /* Full height (cover the whole page) */
+    top: 0;
+    right: 50;
+    /* filter: blur(8px); Black background with opacity */
+    /* -webkit-filter: blur(8px); */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+  }
+
+.drp-2 {
+    display: flex;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.close-btn {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 25px;
+
+    
+}
+
+.sidebar-logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 50px;
+}
