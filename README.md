@@ -5,9 +5,8 @@ There are 7 members in our team: Nilin (Leader), Yuma(Support), Kimhouy, Bunthai
 ##General Formatting Rule
 
 ###Indentation
-
 be clear on indentation of each tag parent and child
-###General Meta Rules
+###GeneralMetaRules
 give comment above the code you write
 ###HTML Validation
 https://validator.w3.org/
