@@ -237,7 +237,8 @@ div.button-container {
 
 body {
     margin: 0px;
-    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
+    font-family: 'Noto Sans ', sans-serif;
+    background-color: #F7F8F8;
 }
 
 
@@ -267,7 +268,9 @@ body {
     outline: none;
     background-color: inherit;
     cursor: pointer;
-
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
 }
 
 .dropdown .search-btn {
@@ -277,11 +280,30 @@ body {
     background-color: inherit;
     margin-left: 30px;
     margin-top: 10px;
-    margin-right: 20px;
-    /* padding: 15px; */
+    margin-right: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.dropdown .profile-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
+  .icon-image{
+    width: 28px;
+    height:28px;
+  }
 
+  .icon-ham{
+    width: 33px;
+    height:33px;
+  }
 /* <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  --> */
 
 .sidebar {
@@ -599,3 +621,8 @@ button.card-btn-width {
 }
 
 /* ============================================== End<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
+
+
+
+
+             
