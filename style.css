@@ -518,106 +518,102 @@ button.card-btn-width {
 
 
 
-/* ============================================== Start<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
+/* =============================start of service=================================== */
 
-/* <<<<<<<<<<<<service header>>>>>>>>>>>>>>>>> */
+/* service header */
 .service-title-B{
-  margin-top: 20px;
+  /* background-color: blue; */
   text-align: center;
+  margin-top: 25px;
+  
 }
-.service-title-B .service-B{
-  font-size: 14px;
-  color: #264d7f;
-  padding: 5px 30px;
-  background-color:#EBEDEF;
-  font-weight: bold;
-  border-radius: 5px;
-  width: 150px;
+.service-title-B .service{
+  width: 114px;
+  padding: 2px 10px;
+  background-color: #EBEDEF;
   margin: auto;
-}
-.service-title-B h2{
-  font-size: 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
   color: #264D7F;
 }
-.service-title-B h2 span{
+.service-title-B h1{
+  color: #264D7F;
+  font-size: 32px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.service-title-B h1 span{
   color: #4C9AFF;
 }
-/* <<<<<<<<<<<<end of service header>>>>>>>>>>>>>>> */
+/* service card */
+.img{
+  height: 280px;
+}
 
-/* <<<<<<<<<<<<card service info>>>>>>>>>>>>>>>>> */
-.container-B{
-  width: 374px;
-  height: auto;
-  background-color: #FFFFFF;
-  margin: 20px auto;
-}
-.container-B .card-info-B .img-B{
-  width: 100%;
-  height: 100%;
-}
-.container-B .card-info-B .img-B img{
+.img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
-.Descrip-B{
-  margin-top: 10px;
-  padding-left: 15px;
+.service-description{
+  margin: 20px;
 }
-.Descrip-B h3{
-  margin-bottom: 10px;
+.service-description h2{
+  color: #264D7F;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.service-description p{
+  color: #0F1715;
+}
+.highlight{
+  background-color: #FFF;
+  margin-left: 10px;
 }
 
-/* start packgae */
-.container-pack-B{
+/* card begin */
+.card-higlight{
   width: 244px;
-  height: 305px;
-  margin:20px auto;
+  height: 300px;
   border: 1px solid #93C2FF;
+  padding: 0;
   border-radius: 5px;
-  /* background-color: blue; */
 }
-.content-B img{
-  width: 114px;
-  height: 44px;
-  margin: 10px 0;
-}
-.container-pack-B .title-B{
-  padding-bottom: 10px;
+.package-1{
+  width: 100%;
   text-align: center;
   background-color: #93C2FF;
-  border-radius: 2px 2px 0 0;
+  padding: 10px 0;
+  color: #0F1715;
+  border-radius: 5px 5px 0px 0px;
 }
-.container-pack-B .content-B{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.card-higlight img{
+  width: 125px;
+  margin: 0px 0;
+  margin-left: 30px;
 }
-.cont-des-B{
-  margin-top: 10px;
-}
-.package-content{
+.package-description{
   text-align: center;
-  padding-bottom: 10px ;
+}
+.package-description h3{
+  padding: 5px 0;
+  font-size: 14px;
 }
 .dashline{
-  width: 192px;
-  height: 0.5px;
+  width: 200px;
   border: 1px dashed #264D7F;
   margin-bottom: 10px;
 }
 .package-button{
-  width: 212px;
-  height: 30px;
   margin-top: 10px;
+  height: 30px;
 }
-.package-1{
-  margin-top: 40px;
+.adjust{
+  margin-top: 30px;
 }
-.package-1-m{
-  margin-top: 23px;
+.adjust-package1{
+ margin-top: 25px;
+ margin-bottom: 0;
 }
-
-/* ============================================== End<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
