@@ -237,8 +237,7 @@ div.button-container {
 
 body {
     margin: 0px;
-    font-family: 'Noto Sans ', sans-serif;
-    background-color: #F7F8F8;
+    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
 }
 
 
@@ -268,9 +267,7 @@ body {
     outline: none;
     background-color: inherit;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1px;
+
 }
 
 .dropdown .search-btn {
@@ -280,30 +277,11 @@ body {
     background-color: inherit;
     margin-left: 30px;
     margin-top: 10px;
-    margin-right: 25px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 9px;
-}
-.dropdown .profile-btn {
-  display: flex;
-  border: none;
-  outline: none;
-  background-color: inherit;
-  margin-right: 15px;
-  justify-content: center;
-  align-items: center;
+    margin-right: 20px;
+    /* padding: 15px; */
 }
 
-  .icon-image{
-    width: 28px;
-    height:28px;
-  }
 
-  .icon-ham{
-    width: 33px;
-    height:33px;
-  }
 /* <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  --> */
 
 .sidebar {
@@ -515,107 +493,144 @@ button.card-btn-width {
   border-radius: 100px;
 }
 
+/* ////////////////////////////////////////// Booking page  //////////////////////////////////////////*/
 
-
-
-/* ============================================== Start<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
-
-/* <<<<<<<<<<<<service header>>>>>>>>>>>>>>>>> */
-.service-title-B{
-  margin-top: 20px;
-  text-align: center;
-}
-.service-title-B .service-B{
-  font-size: 14px;
-  color: #264d7f;
-  padding: 5px 30px;
-  background-color:#EBEDEF;
-  font-weight: bold;
-  border-radius: 5px;
-  width: 150px;
-  margin: auto;
-}
-.service-title-B h2{
-  font-size: 32px;
-  color: #264D7F;
-}
-.service-title-B h2 span{
-  color: #4C9AFF;
-}
-/* <<<<<<<<<<<<end of service header>>>>>>>>>>>>>>> */
-
-/* <<<<<<<<<<<<card service info>>>>>>>>>>>>>>>>> */
-.container-B{
-  width: 374px;
-  height: auto;
-  background-color: #FFFFFF;
-  margin: 20px auto;
-}
-.container-B .card-info-B .img-B{
-  width: 100%;
-  height: 100%;
-}
-.container-B .card-info-B .img-B img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
-}
-.Descrip-B{
-  margin-top: 10px;
-  padding-left: 15px;
-}
-.Descrip-B h3{
-  margin-bottom: 10px;
-}
-
-/* start packgae */
-.container-pack-B{
-  width: 244px;
-  height: 305px;
-  margin:20px auto;
-  border: 1px solid #93C2FF;
-  border-radius: 5px;
-  /* background-color: blue; */
-}
-.content-B img{
-  width: 114px;
-  height: 44px;
-  margin: 10px 0;
-}
-.container-pack-B .title-B{
-  padding-bottom: 10px;
-  text-align: center;
-  background-color: #93C2FF;
-  border-radius: 2px 2px 0 0;
-}
-.container-pack-B .content-B{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.cont-des-B{
-  margin-top: 10px;
-}
-.package-content{
-  text-align: center;
-  padding-bottom: 10px ;
-}
-.dashline{
-  width: 192px;
-  height: 0.5px;
-  border: 1px dashed #264D7F;
-  margin-bottom: 10px;
-}
-.package-button{
-  width: 212px;
-  height: 30px;
-  margin-top: 10px;
-}
-.package-1{
-  margin-top: 40px;
-}
-.package-1-m{
-  margin-top: 23px;
-}
+/* ============title-booking-page=========== */
+.title-booking {
+    color: #264D7F;
+    font-size: 36px;
+    font-weight: 700;
+  
+  }
+  
+  .sub-title-booking {
+    opacity: 50%;
+    font-size: 12px;
+  }
+  
+  .title-line {
+    width: 100%;
+    height: 2px;
+  }
+  
+  
+  /* ============text field=========== */
+  .username-input-M input {
+    border: 1px solid #4C9AFF;
+    background-color: #F7F8F8;
+  }
+  
+  .username-input-M {
+    width: 100%;
+  }
+  
+  .username-input-M span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: #264D7F;
+    pointer-events: none;
+    transition: 0.25s;
+  }
+  
+  .username-input-M input:valid ~ span,
+  .username-input-M input:focus ~ span{
+    color: #264D7F;
+    transform: translateX(10px) translateY(-9px);
+    font-size: 0.85rem;
+    padding: 0 10px;
+    background: #F7F8F8;
+    letter-spacing: 0.1rem;
+  }
+  
+  .username-input-M input:valid,
+  .username-input-M input:focus{
+    color: #264D7F;
+    border: 1px solid #264D7F;
+    opacity: 80%;
+  }
+  
+  
+  /* ============select package=========== */
+  .small-title-M {
+    color: #264D7F;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  
+  /* ============payment method=========== */
+  
+  .select-card-payment-m {
+    width: 100%;
+    padding: 10px;
+    background-color: #EBEDEF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .master-card-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .master-card-m input {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .select-card-payment-m img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .booking-button-m {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* ============booking page 2 =========== */
+  .card-box-pending-m {
+    width: 376px;
+    height: 460px;
+    background-color: #DEEBFF;
+    margin-top: 100px;
+    margin-left: 7px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-box-pending-m h1 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 8px;
+    color: #264D7F;
+  }
+  
+  .card-box-pending-m img {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+  }
+  
+  .card-box-pending-m h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #264D7F;
+  }
+  
+  .card-box-pending-m p {
+    font-size: 14px;
+    opacity: 50%;
+    color: #264D7F;
+    text-align: center;
+    padding: 16px;
+  }
