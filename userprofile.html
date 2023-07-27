@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Link to our group styleshet -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Link for Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">    
+    
+    <title>User Profile</title>
+</head>
+<body>
+    <!-- ---------------------------------- Component Header  ----------------------------------  -->
+    <header>
+        <!-- logo and button -->
+        <nav class="navbar-top">
+            <div class="logo">
+                <a href="#default"><img src="./img/Logo.svg" alt="logo" /></a>
+            </div>
+            <div class="dropdown">
+                <button class="search-btn">
+                    <img src="./img/feSearch2 (1).svg" alt="search-button" />
+                </button>
+                <button class="ham-btn" onclick="on()" onclick="off()">
+                    <img src="./img/Group 108.svg" alt="hambuger-button" />
+                </button>
+            </div>
+        </nav>
+
+        <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
+        <section class="drp-2">
+            <div class="sidebar" id="overlay">
+                <div class="top-menu">
+                    <img src="./img/Logo.svg" alt="health-to-go-logo" class="sidebar-logo" />
+                    <button class="close-btn" onclick="off()">
+                        <img src="./img/Vector (1).svg" alt="close-botton" />
+                    </button>
+                </div>
+
+                <ul class="nav-ul">
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Home</a></li>
+                        <button><img src="./img/arrow.svg" alt="homepage-link" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">About Us</a></li>
+                        <button><img src="./img/arrow.svg" alt="aboutUs-link" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Trust Us</a></li>
+                        <button><img src="./img/arrow.svg" alt="trustUs-link" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Service</a></li>
+                        <button><img src="./img/arrow.svg" alt="service-link" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Hospital</a></li>
+                        <button><img src="./img/arrow.svg" alt="hospital-link" /></button>
+                    </div>
+
+                    <div class="list-each-link">
+                        <li class=""><a href="#">Interpreter</a></li>
+                        <button><img src="./img/arrow.svg" alt="interpreter-link" /></button>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <!-- Section for User Profile page -->
+    <section class="container-fluid p-0">
+        <div class="mx-0 g-0 profiledisplay-N">
+            <div class = "row inner-profile-display-N">
+                <div class="col-sm-12">
+                        <img src="./img/userpro.svg">
+                    <h2>Albert Hockey</h2>
+                    <p>University professor, Entrepreneur, Tech Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section for Tab-->
+    <div id="tabs" class="responsive sticky-top bg-white">
+        <div class="tabs tabs-center">
+            <a href="#responsive" class="tab active">
+                responsive
+            </a>
+            <a href="#center" class="tab">
+                center
+            </a>
+            <a href="#justify" class="tab">
+                justify
+            </a>
+            <a href="#sticky" class="tab">
+                sticky
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>

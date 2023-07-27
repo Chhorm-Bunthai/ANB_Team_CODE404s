@@ -599,3 +599,53 @@ button.card-btn-width {
 }
 
 /* ============================================== End<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
+
+
+
+/* ============================================== Start<<  Nilin  >>============================================== */
+/* Styling for About Us section */
+.aboutus-N{
+  color: #264D7F;
+}
+
+.aboutush1-N{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.aboutimg-N{
+  margin: auto;
+  text-align: center;
+}
+
+.aboutus-N p{
+  text-align: justify;
+}
+
+.aboutus-N span{
+  color:#4C9AFF
+}
+
+/* Styling for User Profile page */
+.profiledisplay-N{
+  background: linear-gradient(180deg, #274690 0%, rgba(40, 50, 139, 0.52) 100%);
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-profile-display-N{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.inner-profile-display-N img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+
+/* ============================================== End<<  Nilin  >>============================================== */
