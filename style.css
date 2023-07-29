@@ -643,6 +643,10 @@ button.card-btn-width {
   height: 120px;
   border-radius: 100%;
 }
+.inner-profile-display-N a img{
+  width: 20px;
+  height: 20px;
+}
 
 /* Section for Tabs */
 .grid-container{
@@ -742,4 +746,63 @@ button.card-btn-width {
   opacity: 70%;
 }
 
+/*Section for edit User profile*/
+
+.edit-field-N{
+  margin: 25px 0px;
+  width: 100%;
+}
+
+.user-dis-N input{
+  border: 1px solid #4C9AFF;
+  background-color: #F7F8F8;
+  width: 100%;
+}
+.user-dis-N span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  color: #264D7F;
+  pointer-events: none;
+  transition: 0.25s;
+}
+.user-dis-N input::placeholder{
+  color:transparent;
+}
+
+.user-dis-N input:valid ~ span,
+.user-dis-N input:focus ~ span{
+  color: #264D7F;
+  transform: translateX(10px) translateY(-9px);
+  font-size: 0.85rem;
+  padding: 0 10px;
+  background: #F7F8F8;
+  letter-spacing: 0.1rem;
+}
+
+.user-dis-N input:valid,
+.user-dis-N input:focus{
+  color: #4C9AFF;
+  border: 1px solid #4C9AFF;
+  opacity: 80%;
+}
+
+.user-dis-N input:focus::placeholder,
+.user-dis-N input:valid::placeholder{
+  color: #264D7F;
+}
+
+#card-N1{
+  background-image: url('./img/master-card.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#card-N2{
+  background-image: url('./img/visa.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
 /* ============================================== End<<  Nilin  >>============================================== */
