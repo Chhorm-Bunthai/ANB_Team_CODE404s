@@ -650,6 +650,7 @@ button.card-btn-width {
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
 }
+
 .grid-container > div{
   display: flex;
   align-items: center;
@@ -663,6 +664,7 @@ button.card-btn-width {
   height: 50px;
   background-color: #FFFFFF;
 }
+
 .grid-container > div:hover{
   background-color: #EBEDEF;
 }
@@ -685,7 +687,7 @@ button.card-btn-width {
   text-align: left;
   padding-top: 10px;
   color:#264D7F;
-  padding: 25px 32px 25px 20px;
+  padding: 25px 32px 0px 20px;
 }
 
 .display-info-N span{
@@ -693,8 +695,51 @@ button.card-btn-width {
   font-weight: 400;
   padding: 25px 15px;
 }
+
 .sever-info-N{
   color: #B2ACB0;
+}
+
+.card-logo-N img{
+  float: right;
+  width: 40px;
+  height: 30px;
+}
+
+/* Section for my schedule */
+.schedule-cont{
+  margin-top: 0;
+}
+
+.display-schedule-N canvas{
+  width: 40px;
+  height: 40px;
+  background-color: #4C9AFF;
+  display: float;
+  float: left;
+  margin-left: 30px;
+}
+
+.display-schedule-N p{
+  padding-top: 10px;
+  color: #264D7F;
+  padding-left: 80px;
+}
+
+.service-title-B .N-span{
+  font-size: 24px;
+  color: #264D7F;
+}
+
+.display-past-N .display-box-N{
+  height: 80px;
+  padding: 30px 60px;
+  color: #264D7F;
+  background-color: #EBEDEF;
+}
+
+.display-box-N p{
+  opacity: 70%;
 }
 
 /* ============================================== End<<  Nilin  >>============================================== */
