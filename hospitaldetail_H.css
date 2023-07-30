@@ -646,13 +646,15 @@ button.card-btn-width {
     margin-left: 20px;
   
   }
-  
-  .title-H {
-  
-    padding-top: 34px;
+
+  .info-container-H h1{
     font-size: 36px;
     font-weight: bold;
     color: #264D7F;
+  }
+  
+  .title-H {
+    padding-top: 34px;
     text-align: center;
   
   }
@@ -800,7 +802,7 @@ button.card-btn-width {
   .body-H{
     margin: 0;
     width: 100%;
-    background-color: #EBEDEF;
+    background-color: #F7F8F8;
     /* padding-bottom: 2000px; */
   }
   .background-H{
@@ -818,7 +820,7 @@ button.card-btn-width {
     width: 374px;
     height: 750px;
     position: relative;
-    top: 280px;
+    top: 30px;
     margin: auto;
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -841,7 +843,7 @@ button.card-btn-width {
   }
   
   .depart-box-H{
-    top: 300px;
+    top: 40px;
     width: auto;
     height: 150px;
     margin: 10px 20px;
@@ -870,10 +872,14 @@ button.card-btn-width {
   
   .extra-info{
     position: relative;
-    top: 300px;
+    top: 40px;
     text-align: center;
     color: #264D7F;
     
+  }
+
+  .extra-info p{
+    margin-left: 10px;
   }
   
   .hospital-info{
@@ -900,19 +906,15 @@ button.card-btn-width {
   }
   
   .information{
-    /* margin-left: 25px; */
-    width: 354px;
-    height: 400px;
-    position: absolute;
-    top: 230px;
-    left: 30px;
+    margin-left: 20px;
+    text-align: center;
     background-color: #FFFFFF;
     border-radius: 10px;
   }
   
   .button-H{
     position: relative;
-    margin-top: 320px;
+    margin-top: 40px;
     z-index: 10;
     border-radius: 10px !important;
   }
