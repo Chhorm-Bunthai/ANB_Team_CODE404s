@@ -917,6 +917,7 @@ button.card-btn-width {
     margin-top: 40px;
     z-index: 10;
     border-radius: 10px !important;
+    text-align: center;
   }
  .button-primary {
   background-color: #4C9AFF;
