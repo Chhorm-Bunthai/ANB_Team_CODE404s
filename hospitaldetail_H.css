@@ -910,7 +910,6 @@ button.card-btn-width {
     background-color: #FFFFFF;
     border-radius: 10px;
     width: 374px;
-    display: flex;
   }
   
   .button-H{
@@ -922,13 +921,5 @@ button.card-btn-width {
  .button-primary {
   background-color: #4C9AFF;
   border-radius: 10px;
- }
- @media only screen and (min-width=600px) {
-  .information{
-    display: flex;
-    width: 374px;
-    text-align: center;
-  }
-  
  }
 /* ////////////////////////////////////////// KimHouy End //////////////////////////////////////////*/
