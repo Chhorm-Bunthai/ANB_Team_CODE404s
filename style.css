@@ -746,6 +746,10 @@ button.card-btn-width {
   opacity: 70%;
 }
 
+#calendar-N{
+  margin: auto;
+}
+
 /*Section for edit User profile*/
 
 .edit-field-N{
