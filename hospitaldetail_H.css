@@ -758,7 +758,6 @@ button.card-btn-width {
 }
 
 /* accomplishment style */
-
 .accom-container-H {
 
   width: 374px;
@@ -781,21 +780,17 @@ button.card-btn-width {
 }
 
 .acom-icon-H {
-
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   gap: 20px;
   margin-top: 20px;
-
 }
 
 .acom-info-H {
-
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-
 }
 
 /* specialization style */
@@ -975,7 +970,6 @@ h2 {
 .button-primary {
   background-color: #4C9AFF;
   border-radius: 10px;
-  align-items: center;
 }
 
 /* ////////////////////////////////////////// KimHouy End //////////////////////////////////////////*/

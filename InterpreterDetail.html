@@ -2,86 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpreter Detail</title>
-    <!-- Link to style.css -->
-    <link rel="stylesheet" href="style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Link to Google font -->
     <link rel="stylesheet" href="hospitaldetail_H.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@800&family=Noto+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- Link to Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
-<!-- Header Navigation Bar Section -->
-    <!-- ---------------------------------- Component Header  ----------------------------------  -->
+        <!-- Header Navigation Bar Section -->
+        <!-- ---------------------------------- Component Header  ----------------------------------  -->
     <header>
-        <!-- logo and button -->
-        <nav class="navbar-top">
-            <div class="logo">
-                <a href="#default"><img src="./img/Logo.svg" alt="logo" /></a>
-            </div>
-            <div class="dropdown">
-                <button class="search-btn">
-                    <img class="icon-image" src="./img/search.svg" alt="search-button" />
-                </button>
-                <button class="profile-btn">
-                    <img class="icon-image" src="./img/profile.svg" alt="search-button" />
-                </button>
-                <button class="ham-btn" onclick="on()" onclick="off()">
-                    <img class="icon-ham" src="./img/Hamburger.svg"alt="hambuger-button" />
-                </button>
-            </div>
-        </nav>
-
-        <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
-        <section class="drp-2">
-            <div class="sidebar" id="overlay">
-                <div class="top-menu">
-                    <img src="./img/Logo.svg" alt="health-to-go-logo" class="sidebar-logo" />
-                    <button class="close-btn" onclick="off()">
-                        <img src="./img/close-btn.svg" alt="close-botton" />
+            <!-- logo and button -->
+            <nav class="navbar-top">
+                <div class="logo">
+                    <a href="#default"><img src="./img/Logo.svg" alt="logo" /></a>
+                </div>
+                <div class="dropdown">
+                    <button class="search-btn">
+                        <img class="icon-image" src="./img/search.svg" alt="search-button" />
+                    </button>
+                    <button class="profile-btn">
+                        <img class="icon-image" src="./img/profile.svg" alt="search-button" />
+                    </button>
+                    <button class="ham-btn" onclick="on()" onclick="off()">
+                        <img class="icon-ham" src="./img/Hamburger.svg"alt="hambuger-button" />
                     </button>
                 </div>
+            </nav>
 
-                <ul class="nav-ul">
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Home</a></li>
-                        <button><img src="./img/arrow.svg" alt="homepage-link" /></button>
+            <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
+            <section class="drp-2">
+                <div class="sidebar" id="overlay">
+                    <div class="top-menu">
+                        <img src="./img/Logo.svg" alt="health-to-go-logo" class="sidebar-logo" />
+                        <button class="close-btn" onclick="off()">
+                            <img src="./img/close-btn.svg" alt="close-botton" />
+                        </button>
                     </div>
 
-                    <div class="list-each-link">
-                        <li class=""><a href="#">About Us</a></li>
-                        <button><img src="./img/arrow.svg" alt="aboutUs-link" /></button>
-                    </div>
+                    <ul class="nav-ul">
+                        <div class="list-each-link">
+                            <li class=""><a href="#">Home</a></li>
+                            <button><img src="./img/arrow.svg" alt="homepage-link" /></button>
+                        </div>
 
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Trust Us</a></li>
-                        <button><img src="./img/arrow.svg" alt="trustUs-link" /></button>
-                    </div>
+                        <div class="list-each-link">
+                            <li class=""><a href="#">About Us</a></li>
+                            <button><img src="./img/arrow.svg" alt="aboutUs-link" /></button>
+                        </div>
 
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Service</a></li>
-                        <button><img src="./img/arrow.svg" alt="service-link" /></button>
-                    </div>
+                        <div class="list-each-link">
+                            <li class=""><a href="#">Trust Us</a></li>
+                            <button><img src="./img/arrow.svg" alt="trustUs-link" /></button>
+                        </div>
 
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Hospital</a></li>
-                        <button><img src="./img/arrow.svg" alt="hospital-link" /></button>
-                    </div>
+                        <div class="list-each-link">
+                            <li class=""><a href="#">Service</a></li>
+                            <button><img src="./img/arrow.svg" alt="service-link" /></button>
+                        </div>
 
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Interpreter</a></li>
-                        <button><img src="./img/arrow.svg" alt="interpreter-link" /></button>
-                    </div>
-                </ul>
-            </div>
-        </section>
+                        <div class="list-each-link">
+                            <li class=""><a href="#">Hospital</a></li>
+                            <button><img src="./img/arrow.svg" alt="hospital-link" /></button>
+                        </div>
+
+                        <div class="list-each-link">
+                            <li class=""><a href="#">Interpreter</a></li>
+                            <button><img src="./img/arrow.svg" alt="interpreter-link" /></button>
+                        </div>
+                    </ul>
+                </div>
+            </section>
     </header>
 
     <!-- Section 1: box of detail information -->
@@ -100,22 +99,21 @@
             <h2> Jessica John</h2>
             
             <p class="detail-text-H">
-                Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Female <br>
-                Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  22 years <br>
-                Experience  :  2 years <br>
-                Nationality  :  Cambodian <br>
-                Fluent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Khmer/ English/ Thai <br>
-                Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Daun Penh, Phnom Penh, <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambodia <br>
-                Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Bangkok, Thailand <br>
+                Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Female <br>
+                Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  22 years <br>
+                Experience  &nbsp;:  2 years <br>
+                Nationality  &nbsp;&nbsp;:  Cambodian <br>
+                Fluent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Khmer/ English/ Thai <br>
+                Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Daun Penh, Phnom Penh, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambodia <br>
+                Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  Bangkok, Thailand <br>
             </p>
-
-
         </div>
     </section>
 
-    <!-- description part -->
-    <div class="container-fluid description-container-H">
+
+     <!-- description part -->
+     <div class="container-fluid description-container-H">
         <h2> Description</h2>
         <p>Casantra Ci is a dedicated and organized interpreter who aims to give his best in assisting his clients to communicate with their doctors comfortably. </p>
     </div>
@@ -124,7 +122,7 @@
     <!-- accomplishment part -->
     <div class="container-fluid accom-container-H">
         <h2> Accomplishment</h2>
-        <div style=" display: flex; flex-direction: row; align-items:center; gap: 0px;">
+        <div style=" display: flex; flex-direction: row; align-items:center; gap: 10px;">
             <div class="acom-icon-H">
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1204_2468)">
@@ -165,35 +163,100 @@
 
 
     <!-- specialization part -->
-    <div class="container-fluid sp-container-H">
-        <div class="specialization-container-H">
-            <h3>Specialization</h3>
-            <li>Psychiatry</li>
-            <li>Neurosurgery</li>
-            <li>General surgery</li>
-        </div>
-
-        <div class="specialization-container-H">
-            <h3>Personality</h3>
-            <li>Friendly</li>
-            <li>Patient</li>
-            <li>Empathetic</li>
-        </div>
-
+    <!-- <div class="container" >
+        <div class="row">
+            <div class="container" >
+                <div class="row sp-container-H " >
+                    <div class="col-sm-6 ">
+                        <div class="specialization-container-H ">
+                            <h3>Specialization</h3>
+                            <li>Psychiatry</li>
+                            <li>Neurosurgery</li>
+                            <li>General surgery</li>
+                        </div>
         
-    </div>
+                    </div>
+        
+                    <div class="col-sm-6 ">
+                        <div class="specialization-container-H">
+                            <h3>Personality</h3>
+                            <li>Friendly</li>
+                            <li>Patient</li>
+                            <li>Empathetic</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container-fluid quote-H">
+        </div>
+    </div> -->
+
+    <section class="container">
+        <div class="sp-container-H">
+            <div class="specialization-container-H">
+                <div class="sp-title-H"><h3>Specialization</h3></div>
+                <ul>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                            </svg>
+                            Psychiatry</li>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                            </svg>
+                            Neurosurgery</li>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                            </svg>
+                            General surgery</li>
+                </ul>
+            </div>
+    
+            <div class="specialization-container-H">
+                <div class="sp-title-H"><h3>Personality</h3></div>
+                <ul>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                        </svg>
+                         Friendly
+                    </li>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                            </svg>
+                            Patient</li>
+                    <li>
+                        <svg class="bullet-H" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.62753" cy="5.79053" r="5" fill="#264D7F"/>
+                            </svg>
+                            Empathetic</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Quote -->
+    <div class="container quote-H">
         <p>"With Jessica, patients are able to communicate and consult with specialized doctors with comforts."</p>
     </div>
-    <div class="row mb-4 mt-3 text-center">
-        <div class="col">
-            <div class="booking-button-m">
-                <button class="button-primary medium ">Book Now</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 book-button-container-H">
+                <button class="button-primary medium">Book Now</button>
             </div>
         </div>
     </div>
 
+
+
 </body>
-<script src="index.js"></script>
 </html>
