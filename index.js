@@ -1,15 +1,20 @@
-function on() {
-  document.getElementById("overlay").style.display = "block";
+/////////////////////////////////////////////////////////// Rojeth ////////////////////////////////////////////////
+
+
+// Sidebar Open and close
+const wrap = document.querySelector('.drp-2')
+const ham = document.querySelector('.ham-btn');
+const closeBtn = document.querySelector('.close-btn')
+ham.addEventListener('click',addNav)
+closeBtn.addEventListener('click',addNav)
+
+// function
+
+function addNav(){
+  wrap.classList.toggle("active")
 }
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
 
-function toggle() {
-  var blur = document.getElementById("blur");
-  blur.classList.toggle();
-}
 
 // ////////////////////////////// ////////////////////////////// ////////////////////////////// //////////////////////////// YUMA // ////////////////////////////// ////////////////////////////// ////////////////////////////// ////////////////////////////
 const daysTag = document.querySelector(".days"),

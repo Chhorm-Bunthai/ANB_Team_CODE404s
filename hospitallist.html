@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="list.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- Link for Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,66 +27,88 @@
     <header>
         <!-- logo and button -->
         <nav class="navbar-top">
-            <div class="logo">
-                <a href="#default"><img src="./img/Logo.svg" alt="logo" /></a>
-            </div>
-            <div class="dropdown">
-                <button class="search-btn">
-                    <img class="icon-image" src="./img/search.svg" alt="search-button" />
-                </button>
-                <button class="profile-btn">
-                    <img class="icon-image" src="./img/profile.svg" alt="search-button" />
-                </button>
-                <button class="ham-btn" onclick="on()" onclick="off()">
-                    <img class="icon-ham" src="./img/Hamburger.svg" alt="hambuger-button" />
-                </button>
-            </div>
+          <div class="logo">
+            <a href="Homepage.html"><img src="./img/Logo.svg" alt="logo" /></a>
+          </div>
+          <div class="dropdown">
+            <button class="search-btn">
+              <img class="icon-image" src="./img/search.svg" alt="search-button" />
+            </button>
+            <a href="login.html" class="profile-btn">
+              <img class="icon-image" src="./img/profile.svg" alt="search-button" />
+            </a>
+            <button class="ham-btn">
+              <img class="icon-ham" src="./img/Hamburger.svg" alt="hambuger-button" />
+            </button>
+          </div>
         </nav>
-
+    
         <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
         <section class="drp-2">
-            <div class="sidebar" id="overlay">
-                <div class="top-menu">
-                    <img src="./img/Logo.svg" alt="health-to-go-logo" class="sidebar-logo" />
-                    <button class="close-btn" onclick="off()">
-                        <img src="./img/close-btn.svg" alt="close-botton" />
-                    </button>
-                </div>
-
-                <ul class="nav-ul">
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Home</a></li>
-                        <button><img src="./img/arrow.svg" alt="homepage-link" /></button>
-                    </div>
-
-                    <div class="list-each-link">
-                        <li class=""><a href="#">About Us</a></li>
-                        <button><img src="./img/arrow.svg" alt="aboutUs-link" /></button>
-                    </div>
-
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Trust Us</a></li>
-                        <button><img src="./img/arrow.svg" alt="trustUs-link" /></button>
-                    </div>
-
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Service</a></li>
-                        <button><img src="./img/arrow.svg" alt="service-link" /></button>
-                    </div>
-
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Hospital</a></li>
-                        <button><img src="./img/arrow.svg" alt="hospital-link" /></button>
-                    </div>
-
-                    <div class="list-each-link">
-                        <li class=""><a href="#">Interpreter</a></li>
-                        <button><img src="./img/arrow.svg" alt="interpreter-link" /></button>
-                    </div>
-                </ul>
+          <div id="overlay" class="sidebar">
+            <div class="top-menu">
+              <button class="close-btn">
+                <img src="./img/close-btn.svg" alt="close-botton" />
+              </button>
             </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="Homepage.html">Home</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="userprofile.html">User Profile</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="Trust-us.html">Trust Us</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="service.html">Service</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="hospitallist.html">Hospital</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="interpreterlist.html">Interpreter</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+          </div>
         </section>
-    </header>
+      </header>
     </head>
 
     <body>
@@ -109,18 +131,21 @@
                             </div>
                             <div class="container-info-K">
                                 <p class="contianer-card-icons">
-                                    <h4>&nbsp;&nbsp;Multi specialty
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Multi specialty
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Established in 1980
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Established in 1980
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Over 554 beds
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg"alt="Specialty">
-                                    </h4>
-                                    <h4>&nbsp;&nbsp;Reivew
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"alt="Specialty">
-                                    </h4>
+                                <h4>&nbsp;&nbsp;Over 554 beds
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg" alt="Specialty">
+                                </h4>
+                                <h4>&nbsp;&nbsp;Reivew
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"
+                                        alt="Specialty">
+                                </h4>
                                 </p>
 
                             </div>
@@ -137,18 +162,21 @@
                             </div>
                             <div class="container-info-K">
                                 <p class="contianer-card-icons">
-                                    <h4>&nbsp;&nbsp;Multi specialty
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Multi specialty
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Established in 1972
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Established in 1972
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Over 120 beds
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg"alt="Specialty">
-                                    </h4>
-                                    <h4>&nbsp;&nbsp;Reivew
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"alt="Specialty">
-                                    </h4>
+                                <h4>&nbsp;&nbsp;Over 120 beds
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg" alt="Specialty">
+                                </h4>
+                                <h4>&nbsp;&nbsp;Reivew
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"
+                                        alt="Specialty">
+                                </h4>
                                 </p>
                             </div>
                         </div>
@@ -164,18 +192,21 @@
                             </div>
                             <div class="container-info-K">
                                 <p class="contianer-card-icons">
-                                    <h4>&nbsp;&nbsp;Multi specialty
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Multi specialty
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Established in 1987
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Established in 1987
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Over 260 beds
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg"alt="Specialty">
-                                    </h4>
-                                    <h4>&nbsp;&nbsp;Reivew
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"alt="Specialty">
-                                    </h4>
+                                <h4>&nbsp;&nbsp;Over 260 beds
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg" alt="Specialty">
+                                </h4>
+                                <h4>&nbsp;&nbsp;Reivew
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"
+                                        alt="Specialty">
+                                </h4>
                                 </p>
                             </div>
                         </div>
@@ -191,18 +222,21 @@
                             </div>
                             <div class="container-info-K">
                                 <p class="contianer-card-icons">
-                                    <h4>&nbsp;&nbsp;Multi specialty
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Multi specialty
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/multi speacialty.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Established in 1984
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"alt="Specialty">
+                                <h4>&nbsp;&nbsp;Established in 1984
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/established.svg"
+                                        alt="Specialty">
                                 </h4>
-                                    <h4>&nbsp;&nbsp;Over 400 beds
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg"alt="Specialty">
-                                    </h4>
-                                    <h4>&nbsp;&nbsp;Reivew
-                                        <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"alt="Specialty">
-                                    </h4>
+                                <h4>&nbsp;&nbsp;Over 400 beds
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/beds.svg" alt="Specialty">
+                                </h4>
+                                <h4>&nbsp;&nbsp;Reivew
+                                    <img class="container-icon1" src="./img/hos-int-img/icons/review.svg"
+                                        alt="Specialty">
+                                </h4>
                                 </p>
                             </div>
                         </div>
