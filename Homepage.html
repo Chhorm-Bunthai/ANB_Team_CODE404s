@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Homepage</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <title>Document</title>
 </head>
-
 <body>
+    
+
     <header>
         <!-- logo and button -->
         <nav class="navbar-top">
@@ -23,18 +21,15 @@
                 <button class="search-btn">
                     <img class="icon-image" src="./img/search.svg" alt="search-button" />
                 </button>
-                <a href="login.html">
-                    <button class="profile-btn">
-                        <img class="icon-image" src="./img/profile.svg" alt="search-button" />
-                    </button>
-                </a>
-                
+                <button class="profile-btn">
+                    <img class="icon-image" src="./img/profile.svg" alt="search-button" />
+                </button>
                 <button class="ham-btn" onclick="on()" onclick="off()">
                     <img class="icon-ham" src="./img/Hamburger.svg"alt="hambuger-button" />
                 </button>
             </div>
         </nav>
-
+    
         <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
         <section class="drp-2">
             <div class="sidebar" id="overlay">
@@ -44,33 +39,33 @@
                         <img src="./img/close-btn.svg" alt="close-botton" />
                     </button>
                 </div>
-
+    
                 <ul class="nav-ul">
                     <div class="list-each-link">
-                        <li class=""><a href="Homepage.html">Home</a></li>
+                        <li class=""><a href="#">Home</a></li>
                         <button><img src="./img/arrow.svg" alt="homepage-link" /></button>
                     </div>
-
+    
                     <div class="list-each-link">
                         <li class=""><a href="#">About Us</a></li>
                         <button><img src="./img/arrow.svg" alt="aboutUs-link" /></button>
                     </div>
-
+    
                     <div class="list-each-link">
                         <li class=""><a href="#">Trust Us</a></li>
                         <button><img src="./img/arrow.svg" alt="trustUs-link" /></button>
                     </div>
-
+    
                     <div class="list-each-link">
                         <li class=""><a href="#">Service</a></li>
                         <button><img src="./img/arrow.svg" alt="service-link" /></button>
                     </div>
-
+    
                     <div class="list-each-link">
                         <li class=""><a href="#">Hospital</a></li>
                         <button><img src="./img/arrow.svg" alt="hospital-link" /></button>
                     </div>
-
+    
                     <div class="list-each-link">
                         <li class=""><a href="#">Interpreter</a></li>
                         <button><img src="./img/arrow.svg" alt="interpreter-link" /></button>
@@ -79,11 +74,11 @@
             </div>
         </section>
     </header>
-
-    <section class="container-fluid gx-0">
-        <div class="row m-0">
-            <div class="col-sm-12 section1-contanier-L">
-                <div class="text-container-L">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section1-contanier-L">
+                <div class="text-container-L" >
                     <h2 class="head-text-L">
                         YOUR HEALTH IS OUR TOP PRIORITY
                     </h2>
@@ -92,41 +87,38 @@
                     </p>
                 </div>
 
-                <img class="bg-image-L" src="./img/HP_img/bg-removebg-preview.png" alt="bg_image">
-                <div class="booking-button-container-L">
-                    <a href="booking_page1.html">
-                        <button class="booking-button-L">
-                            Booking
-                        </button>
-                    </a>
+                <div class="col-md-6">
+                    <img class="bg-image-L" src="./img/HP_img/bg-removebg-preview.png" alt="backgroun_image">
+                </div>
+
+                <div class="booking-button-L">
+                    <a href="booking_page1.html"><button class="button-primary medium ">Book Now</button></a>
                 </div>
             </div>
         </div>
-        
-   </section>
-   
-   <!-- tab bar -->
+    </div>
+  
+    <!-- tab bar -->
    <section>
     <!-- Tab links -->
         <div class="tab container-fluid gx-0">
             <div class="grid-container">
-                <div class="tablinks profile-tab"><a href="#to-profile">Hospital</a></div>
-                <div class="tablinks schedule-tab"><a href="#to-schedule">Interpreter</a></div>
-                <div class="tablinks appointment-tab"><a href="#to-appointments">Service</a></div>
+                <div class="tablinks profile-tab"><a href="#to-hospital">Hospital</a></div>
+                <div class="tablinks schedule-tab"><a href="#to-interpreter">Interpreter</a></div>
+                <div class="tablinks appointment-tab"><a href="#to-service">Service</a></div>
             </div>
         </div>
     </section>
 
    <!-- PARTNERSHIP hospital -->
-   <section class="container-fluid gx-0">
+   <section class="container" id="to-hospital">
         <div class="row">
-            <div class="col-sm-12 gx-0 hospital-desc-container-L">
+            <div class="col-md-12 hospital-desc-container-L">
                 <h2 class="hospital-title-L"> PARTNERSHIP HOSPITAL</h2>
                 <p class="hospital-desc-L">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis aliquet ipsum at semper. Etiam sem diam, porttitor id odio et, gravida ornare sem. Curabitur nec sagittis metus, vel bibendum sem. Morbi eleifend, tortor at gravida fringilla, purus elit porttitor nisl, vitae egestas felis felis sit amet augue. </p>
             </div>
         </div>
-
-   </section>
+    </section>
 
     <!-- hospital carousel -->
     <section class="container-fluid gx-0">
@@ -137,7 +129,7 @@
                         <h4>Bangkok Hospital</h4>
                         <p>in bangkok, Thailand</p>
                     </div>
-                    <img id="slide1" class="photo" src="./img/HP_img/bangkokhp.jpg" alt="">
+                    <img id="slide1" class="photo" src="./img/HP_img/bangkokhp.jpg" alt="hopital_image">
                 </div>
 
                 <div class="info-container-L">
@@ -145,7 +137,7 @@
                         <h4>Phyathai2 Hospital</h4>
                         <p>in bangkok, Thailand</p>
                     </div>
-                    <img id="slide2" class="photo" src="./img/HP_img/media.jpg" alt="">
+                    <img id="slide2" class="photo" src="./img/HP_img/media.jpg" alt="hospital_image">
                 </div>
 
                 <div class="info-container-L">
@@ -153,10 +145,10 @@
                         <h4>Bumrungrad Hospital</h4>
                         <p>in bangkok, Thailand</p>
                     </div>
-                    <img id="slide3" class="photo" src="./img/HP_img/Rectangle 362.jpg" alt="">
+                    <img id="slide3" class="photo" src="./img/HP_img/Rectangle 362.jpg" alt="hopital_image">
                 </div>
 
-                <a href="HospitalDetail">
+                <a href="HospitalDetail.html">
                     <button class="see-detail-button-L">See Detail</button>
                 </a>
 
@@ -167,23 +159,28 @@
                 <a href="#slide2"> </a>
                 <a href="#slide3"> </a>
             </div>
-
         </div>
     </section>
-    <!-- <div class="sm-button-container-L">
-        <a href="">
+
+    <!-- see more button -->
+    <div class="sm-button-container-L">
+        <a href="hospital.html">
             <button class="see-more-button-L">See More</button>
         </a>
-    </div> -->
-
-   <section class="container-fluid gx-0">
-    <div class="row">
-        <div class="col-sm-12 gx-0 hospital-desc-container-L">
-            <h2 class="hospital-title-L"> Cooperate Interpreter</h2>
-            <p class="hospital-desc-L">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis aliquet ipsum at semper. Etiam sem diam, porttitor id odio et, gravida ornare sem. Curabitur nec sagittis metus, vel bibendum sem. Morbi eleifend, tortor at gravida fringilla, purus elit porttitor nisl, vitae egestas felis felis sit amet augue. </p>
-        </div>
     </div>
-    <div class="container-fluid gx-0">
+
+    <section class="container " id="to-interpreter">
+        <div class="row">
+            <div class="col-md-12 hospital-desc-container-L">
+                <h2 class="hospital-title-L"> COOPERATE INTERPRETER </h2>
+                <p class="hospital-desc-L">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis aliquet ipsum at semper. Etiam sem diam, porttitor id odio et, gravida ornare sem. Curabitur nec sagittis metus, vel bibendum sem. Morbi eleifend, tortor at gravida fringilla, purus elit porttitor nisl, vitae egestas felis felis sit amet augue. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Interpreter carousel -->
+    <section class="container-fluid gx-0" >
         <div class="slider-wrapper">
             <div class="slider">
                 <div class="info-container-L">
@@ -191,7 +188,7 @@
                         <h4>Jessica John</h4>
                         <p>Japanese Interpreter</p>
                     </div>
-                    <img id="slide1" class="photo" src="./img/HP_img/Rectangle 81.jpg" alt="">
+                    <img id="slide1" class="photo" src="./img/HP_img/Rectangle 81.jpg" alt="interpreter_image">
                 </div>
 
                 <div class="info-container-L">
@@ -199,7 +196,7 @@
                         <h4>Machel Jonas</h4>
                         <p>Thailand Interpreter</p>
                     </div>
-                    <img id="slide2" class="photo" src="./img/HP_img/Rectangle 345.jpg" alt="">
+                    <img id="slide2" class="photo" src="./img/HP_img/Rectangle 345.jpg" alt="interpreter_image">
                 </div>
 
                 <div class="info-container-L">
@@ -207,10 +204,10 @@
                         <h4>Mara John</h4>
                         <p>Korean Interpreter</p>
                     </div>
-                    <img id="slide3" class="photo" src="./img/HP_img/Rectangle 347.jpg" alt="">
+                    <img id="slide3" class="photo" src="./img/HP_img/Rectangle 347.jpg" alt="interpreter_image">
                 </div>
 
-                <a href="InterpreterDetail">
+                <a href="InterpreterDetail.html">
                     <button class="see-detail-button-L">See Detail</button>
                 </a>
 
@@ -221,85 +218,97 @@
                 <a href="#slide2"> </a>
                 <a href="#slide3"> </a>
             </div>
-
         </div>
+    </section>
+
+    <!-- see more button -->
+    <div class="sm-button-container-L">
+        <a href="interpreter.html">
+            <button class="see-more-button-L">See More</button>
+        </a>
     </div>
 
-</section>
 
     <!-- service part -->
-   <div>
+   <div id="to-service">
         <h2 class="hospital-title-L sectio-title"> OUR SERVICE</h2>
-    </div>
+   </div>
 
-   <section>
-        <div class="container-fluid gx-0">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="hospital-info-card-L">
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hospital-info-card-L">
+                    <div class="service-title-L">
                         <h2 class="card-title-L">Hospital</h2>
-                        <ul>
-                            <li>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vivamus mattis aliquet ipsum at semper.
-                            </li>
-                            <li>
-                                Etiam sem diam, porttitor id odio et, gravida ornare sem.
-                                Curabitur nec sagittis metus, vel bibendum sem.
-                            </li>
-                            <li>
-                                Morbi eleifend, tortor at gravida fringilla, purus elit
-                                porttitor nisl, vitae egestas felis felis sit amet augue.
-                            </li>
-                            </ul>
                     </div>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vivamus mattis aliquet ipsum at semper.
+                        </li>
+                        <li>
+                            Etiam sem diam, porttitor id odio et, gravida ornare sem.
+                            Curabitur nec sagittis metus, vel bibendum sem.
+                        </li>
+                        <li>
+                            Morbi eleifend, tortor at gravida fringilla, purus elit
+                            porttitor nisl, vitae egestas felis felis sit amet augue.
+                        </li>
+                        </ul>
+                </div>
 
-                    <div class="hospital-info-card-L">
+                <div class="hospital-info-card-L">
+                    <div class="service-title-L">
                         <h2 class="card-title-L">Interpreter</h2>
-                        <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vivamus mattis aliquet ipsum at semper.
-                        </li>
-                        <li>
-                            Etiam sem diam, porttitor id odio et, gravida ornare sem.
-                            Curabitur nec sagittis metus, vel bibendum sem.
-                        </li>
-                        <li>
-                            Morbi eleifend, tortor at gravida fringilla, purus elit
-                            porttitor nisl, vitae egestas felis felis sit amet augue.
-                        </li>
-                    </ul>
                     </div>
+                    <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus mattis aliquet ipsum at semper.
+                    </li>
+                    <li>
+                        Etiam sem diam, porttitor id odio et, gravida ornare sem.
+                        Curabitur nec sagittis metus, vel bibendum sem.
+                    </li>
+                    <li>
+                        Morbi eleifend, tortor at gravida fringilla, purus elit
+                        porttitor nisl, vitae egestas felis felis sit amet augue.
+                    </li>
+                </ul>
+                </div>
 
-                    <div class="hospital-info-card-L">
-                        <h2 class="card-title-L">Accommodation</h2>
-                        <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vivamus mattis aliquet ipsum at semper.
-                        </li>
-                        <li>
-                            Etiam sem diam, porttitor id odio et, gravida ornare sem.
-                            Curabitur nec sagittis metus, vel bibendum sem.
-                        </li>
-                        <li>
-                            Morbi eleifend, tortor at gravida fringilla, purus elit
-                            porttitor nisl, vitae egestas felis felis sit amet augue.
-                        </li>
-                    </ul>
+                <div class="hospital-info-card-L">
+                    <div class="service-title-L">
+                        <h2 class="card-title-L">Accomadation</h2>
                     </div>
+                    <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus mattis aliquet ipsum at semper.
+                    </li>
+                    <li>
+                        Etiam sem diam, porttitor id odio et, gravida ornare sem.
+                        Curabitur nec sagittis metus, vel bibendum sem.
+                    </li>
+                    <li>
+                        Morbi eleifend, tortor at gravida fringilla, purus elit
+                        porttitor nisl, vitae egestas felis felis sit amet augue.
+                    </li>
+                </ul>
                 </div>
             </div>
         </div>
-  </section>
+    </div>
+</section>
+
 
 <!-- Vision part -->
 <!-- Section for About Us content to be put on Homepage -->
 <!-- Using Bootstrap container class and set grid to 2 rows full width in sm devices-->
-  <section class="container-fluid">
+<section class="container-fluid">
     <div>
-        <h2 class="hospital-title-L sectio-title"> OUR SERVICE</h2>
+        <h2 class="hospital-title-L sectio-title"> OUR VISION</h2>
         <p class="hospital-desc-L">
             Our vision is to use technology to help Cambodians to a broader and more accessible healthcare service which meet all their medical needs.
         </p>
@@ -309,7 +318,7 @@
         <h2 class="hospital-title-L sectio-title"> ABOUT US</h2>
         <img src="./img/HP_img/Team.png" alt="aboutus-image">
         <p class="hospital-desc-L">
-            CODE404 took our first step as a team at Above and Beyond School in
+            <span>CODE404</span> took our first step as a team at Above and Beyond School in
              Cambodia. We are a team of aspiring software developers who are share
               a vision of using tech to make medical travels more accessible to the
                Cambodian people. Our team is well-versed in Tech through our training backed by EM-Cast the  #1 Ed-tech company from South Korea. 
@@ -376,7 +385,6 @@
     </div>
   </footer>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
-
