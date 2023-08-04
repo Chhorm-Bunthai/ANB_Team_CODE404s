@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- Link to our group styleshet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="user_profile.css" />
     
     <!-- Link for Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,7 @@
     <!-- Section for Tab-->
     <section>
         <!-- Tab links -->
-        <div class="tab container-fluid">
+        <div class="tab container-fluid px-0">
             <div class="grid-container">
                 <div class="tablinks profile-tab"><a href="#to-profile">Profile</a></div>
                 <div class="tablinks schedule-tab"><a href="#to-schedule">Schedule</a></div>
@@ -112,45 +112,35 @@
 
     <!-- Section for My Profile content -->
     <section class="container-fluid">
-        <div class="row text-center" id="to-profile">
-            <div class="service-title-B">
+        <div class="row" id="to-profile">
+            <div class="service-description text-center">
                 <h2>MY PROFILE</h2>
             </div>
-        <div class="row profile-info-N">
-            <div class="display-info-N">
+        </div>
+        <div class="row profile-info-N container-fluid">
+            <div class="display-info-N col-sm-12">
                 <div>
                     <p><span>Username &nbsp;&nbsp;&nbsp;&nbsp;:</span>Albert Hockey</p>
-                </div>
-                <div>
                     <p><span>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>alberthockey21@gmail.com</p>
-                </div>
-                <div>
                     <p><span>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>+11 123 456 7890</p>
-                </div>
-                <div>
                     <p><span>Social&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span></p>
-                </div>
-                <div>
                     <p><span>Account Type&nbsp;:</span><span class="sever-info-N">Silver</span></p>
-                </div>
-                <div>
-                    <p class="card-logo-N">
-                        <span>My cards&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="sever-info-N">1234 1234 1234 1234</span>
-                        <img alt="master card logo" src="./img/master-card.svg">
-                    </p>
-                </div>
-                <div>
+                    <div class="card-contain-N">
+                        <p>
+                            <img class="card-logo-N" alt="master card logo" src="./img/master-card.svg">
+                            <span class="">My cards&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="sever-info-N">1234 1234 1234 1234</span>
+                        </p>
+                    </div>
                     <p><span>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>#23 St 123, ABC District, A City</p>
                 </div>   
             </div>
-        </div>
         </div>
     </section>
 
     <!-- Section for Schedule -->
     <section class="container-fluid">
         <div class="row schedule-cont" id="to-schedule">
-            <div class="service-title-B">
+            <div class="service-description text-center">
                 <h2>MY SCHEDULE</h2>
             </div>
             <div class="display-schedule-N">
@@ -189,21 +179,40 @@
 
     <!-- Section for Appointments -->
     <section class="container-fluid">
-        <div class="row text-center display-appoint-cont" id="to-appointments">
+        <div class="row" id="to-appointments">
             <div class="display-appoint-N">
-                <div class="service-title-B">
+                <div class="service-description text-center">
                     <h2>APPOINTMENTS<span class="N-span">(UPCOMING)</span></h2>
                 </div>
+                <div class="container-card-K change-card-N">
+                    <div class="container-card-title-K">
+                            <h2><b>Bangkok Hospital</b></h2>
+                            <h4>in Bangkok, Thailand</h4>
+                    </div>
+                    <div class="container-img-K">
+                        <img src="./img/Bangkok-hospital.svg" alt="bangkok hospital">
+                    </div>
+                    <div class="container-info-K">
+                        <p>
+                            <h3>Appointment: August _th, 8am</h3>
+                            <h4>Department: Neuroscience</h4>
+                            <h4>Dr: Pinchara Phat</h4>
+                            <h4>Interpreter: Casantra Ci</h4>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!-- Needs Limkhy's hospital card here-->
+
+            </div>
+            <!-- Limkhy's hospital card here-->
             <div class="display-past-N">
-                <div class="service-title-B">
+                <div class="service-description text-center">
                     <h2>APPOINTMENTS<span class="N-span">(HISTORY)</span></h2>
                     <div class="display-box-N">
                         <p>You have no past appointments</p>
                     </div>
                 </div>
-                <div class="service-title-B">
+                <div class="service-description text-center">
                     <h2>APPOINTMENTS<span class="N-span">(PENDING)</span></h2>
                     <div class="display-box-N">
                         <p>You have no pending appointments</p>

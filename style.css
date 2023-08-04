@@ -516,8 +516,14 @@ button.card-btn-width {
 }
 
 
-/* =============================start of service=================================== */
 
+/* =============================start of service=================================== */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F7F8F8;
+}
 /* service header */
 .service-title-B{
   /* background-color: blue; */
@@ -548,16 +554,17 @@ button.card-btn-width {
 .service-title-B h1 span{
   color: #4C9AFF;
 }
-/* service card */
+
+
+/* frjhf */
 .img{
   height: 280px;
 }
-
 .img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 5px 5px 0 0;
 }
 .service-description{
   margin: 20px;
@@ -568,13 +575,17 @@ button.card-btn-width {
   font-weight: bold;
 }
 .service-description p{
+  width: 380px;
   color: #0F1715;
+  overflow-wrap: break-word;
+
 }
 .highlight{
   background-color: #FFF;
   margin-left: 10px;
 }
 
+/* package card */
 /* card begin */
 .card-higlight{
   width: 244px;
@@ -582,6 +593,7 @@ button.card-btn-width {
   border: 1px solid #93C2FF;
   padding: 0;
   border-radius: 5px;
+  background-color: #EBEDEF;
 }
 .package-1{
   width: 100%;
@@ -625,6 +637,7 @@ button.card-btn-width {
 }
 .card-border{
   border: 1px solid #B9EEE3;
+
 }
 
 /* End Service  */
@@ -1819,3 +1832,11 @@ border-radius: 10px;
 /* End home page */
 
 /* End CSS */
+
+
+
+.adjusting{
+  margin-top: 20px;
+  background-color: #fff;
+}
+
