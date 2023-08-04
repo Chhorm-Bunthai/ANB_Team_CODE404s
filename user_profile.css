@@ -755,7 +755,7 @@
     #calendar-N{
       margin: auto;
     }
-    
+
     /*Section for edit User profile*/
     
     .edit-field-N{
@@ -815,4 +815,9 @@
       background-repeat: no-repeat;
       background-position: right;
     }
+    /* Limkhy's Hospital card styling */
+    .change-card-N h3{
+      color: #264D7F;
+    }
+      
     /* ============================================== End<<  Nilin  >>============================================== */
