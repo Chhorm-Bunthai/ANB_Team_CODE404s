@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Link to our group styleshet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link for Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <!-- ---------------------------------- Component Header  ----------------------------------  -->
+    <header>
+        <!-- logo and button -->
+        <nav class="navbar-top">
+          <div class="logo">
+            <a href="Homepage.html"><img src="./img/Logo.svg" alt="logo" /></a>
+          </div>
+          <div class="dropdown">
+            <button class="search-btn">
+              <img class="icon-image" src="./img/search.svg" alt="search-button" />
+            </button>
+            <a href="login.html" class="profile-btn">
+              <img class="icon-image" src="./img/profile.svg" alt="search-button" />
+            </a>
+            <button class="ham-btn">
+              <img class="icon-ham" src="./img/Hamburger.svg" alt="hambuger-button" />
+            </button>
+          </div>
+        </nav>
+    
+        <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  -->
+        <section class="drp-2">
+          <div id="overlay" class="sidebar">
+            <div class="top-menu">
+              <button class="close-btn">
+                <img src="./img/close-btn.svg" alt="close-botton" />
+              </button>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="Homepage.html">Home</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="userprofile.html">User Profile</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="Trust-us.html">Trust Us</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="service.html">Service</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="hospitallist.html">Hospital</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+    
+            <div class="list-each-link">
+              <div class="text-link">
+                <a href="interpreterlist.html">Interpreter</a>
+              </div>
+              <div class="step-btn">
+                <a href=""><button><img src="./img/arrow.svg" alt="homepage-link" /></button></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+    <!-- Section for User Profile display -->
+    <section class="container-fluid p-0">
+        <div class="mx-0 g-0 profiledisplay-N">
+            <div class="row inner-profile-display-N">
+                <div class="col-sm-12">
+                    <img src="./img/userpro.svg">
+                    <h2>Albert Hockey<a href="./editprofile.html"><img src="./img/Vector.svg" alt="edit graphic"></a>
+                    </h2>
+                    <p>University professor, Entrepreneur, Tech Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Edit profile -->
+    <section class="container-fluid">
+        <div class="row text-center ">
+            <div class="col-sm-12">
+                <form action="/.">
+                    <div class="service-title-B">
+                        <h2>EDIT PROFILE</h2>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="text" name="username" placeholder="Albert Hockey" required />
+                        <span>Username</span>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="email" name="email" placeholder="alberthockey21@gmail.com" required="required" />
+                        <span>Email</span>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="tel" name="phone" placeholder="+11 123 456 7890"
+                            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required="required" />
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="password" name="password" placeholder="e********9" required="required" />
+                        <span>Password</span>
+                    </div>
+                    <div class="service-title-B">
+                        <h2>EDIT PAYMENT METHOD</h2>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="tel" id="card-N1" name="m-card" placeholder="1234 1234 4567 8901"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required="required" />
+                        <span>My credit card</span>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="tel" id="card-N2" name="v-card" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                            required="required" />
+                        <span>Add a new card</span>
+                    </div>
+                    <div class="input-bx user-dis-N edit-field-N">
+                        <input type="text" name="address" placeholder="#23 St 123, ABC District, A City, B Country"
+                            required="required" />
+                        <span>Address</span>
+                    </div>
+                    <div class="button-1 mb-2">
+                        <button type="submit" class="button-primary medium"
+                            formaction="./userprofile.html">Save</button>
+                    </div>
+                    <div class="button-4 mb-3">
+                        <button type="submit" class="button-primary medium outline"
+                            formaction="./userprofile.html">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="index.js"></script>
+
+</html>

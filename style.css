@@ -1,7 +1,246 @@
-
-
 /* ////////////////////////////////////////// Yuma  //////////////////////////////////////////*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
+}
+
+.yuma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* ================= button   =================*/
+div.button-container {
+  margin: 50px;
+
+}
+
+/* set color  */
+.button-primary {
+  background-color: #4C9AFF;
+  color: white;
+  border: #4C9AFF;
+}
+
+
+.button-secondary {
+  background-color: #3C7BCC;
+  color: white;
+}
+
+.button-tertiary {
+  background-color: #3E5C56;
+  color: white;
+}
+
+/* ========= set width  ===========*/
+/* width of small is  */
+.small {
+  width: 95px;
+}
+
+/* width of medium is 180 but padding each side is 12 */
+.medium {
+  width: 192px;
+}
+
+.large {
+  width: 386px;
+}
+
+button {
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* outline*/
+button.outline.button-primary {
+  background-color: white;
+  color: #4C9AFF;
+  border: 1px solid #4C9AFF;
+}
+
+button.outline.button-secondary {
+  background-color: white;
+  color: #3C7BCC;
+  border: 1px solid #3C7BCC;
+}
+
+button.outline.button-tertiary {
+  background-color: white;
+  color: #3E5C56;
+  border: 1px solid #3E5C56;
+}
+
+/* ================= Text field   =================*/
+
+.input-bx {
+  position: relative;
+  width: 300px;
+}
+
+.input-bx input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.6s;
+}
+
+.input-bx span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #7f8fa6;
+
+  pointer-events: none;
+  transition: 0.6s;
+}
+
+.input-bx input:valid~span,
+.input-bx input:focus~span {
+  color: #3C7BCC;
+  transform: translateX(10px) translateY(-9px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.input-bx input:valid,
+.input-bx input:focus {
+  color: #3C7BCC;
+  ;
+  border: 2px solid #3C7BCC;
+  ;
+
+}
+
+/* ===================== Calendar  =====================*/
+.c {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.wrapper {
+  width: 380px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+}
+
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 20px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar .days {
+  margin-bottom: 20px;
+}
+
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  background: #4C9AFF;
+}
+
+.days li:not(.active):hover::before {
+  background: #4C9AFF;
+}
 
 
 
@@ -12,3 +251,1773 @@
 
 
 /* ////////////////////////////////////////// Rojeth  //////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap');
+
+/* <!-- ---------------------------------- Component Header  ----------------------------------  --> */
+
+body {
+  margin: 0px;
+  font-family: 'Noto Sans ', sans-serif;
+  background-color: #F7F8F8;
+}
+
+
+.navbar-top {
+  height: 70px;
+  background-color: #4C9AFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+
+}
+
+.dropdown {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.dropdown .ham-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.dropdown .search-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.dropdown .profile-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-image {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-ham {
+  width: 33px;
+  height: 33px;
+}
+
+/* <!-- ---------------------------------- Dropdown Overlay  ----------------------------------  --> */
+
+.sidebar {
+  background-color: #4C9AFF;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.top-menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.top-menu img {
+  width: 30px;
+}
+
+
+.list-each-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 55px 0px 38px;
+  list-style: none;
+}
+
+.list-each-link .text-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.text-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+
+.step-btn button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+
+#overlay {
+  display: block;
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: -100%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.active #overlay {
+  right: 0;
+}
+
+
+
+.close-btn {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+/* <!-- ---------------------------------- Card-Content  ----------------------------------  --> */
+.card {
+  display: block;
+  height: 480px;
+  width: 360px;
+  border-radius: 12px;
+  margin-left: 50px;
+  outline: 0.5px solid #EBEDEF;
+}
+
+.card-header {
+  display: flex;
+  height: 72px;
+  padding: 12px 4px 12px 16px;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-header h1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card-header p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+.card-img img {
+  display: flex;
+  max-height: 188px;
+  width: 360px;
+
+}
+
+.card-title {
+  height: 144px;
+  margin-left: 10px;
+}
+
+.card-title h1 {
+  display: flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 1px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+.card-title p {
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+  height: 20px;
+}
+
+
+.card-content {
+  margin-top: 1px;
+  margin-left: 10px;
+  display: contents;
+  justify-content: center;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.25px;
+
+}
+
+.card-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+
+
+.card-btn .none-active-btn a {
+  text-decoration: none;
+  color: #3C7BCC;
+}
+
+.card-btn .active-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+button.card-btn-width {
+  width: 99px;
+  margin-right: 16px;
+  border-radius: 100px;
+}
+
+
+
+/* =============================start of service=================================== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F7F8F8;
+}
+
+/* service header */
+.service-title-B {
+  /* background-color: blue; */
+  text-align: center;
+  margin-top: 25px;
+
+}
+
+.service-title-B .service {
+  width: 114px;
+  padding: 2px 10px;
+  background-color: #EBEDEF;
+  margin: auto;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #264D7F;
+}
+
+.service-title-B h1 {
+  color: #264D7F;
+  font-size: 32px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.service-title-B h1 span {
+  color: #4C9AFF;
+}
+
+
+/* frjhf */
+.img {
+  height: 280px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.service-description {
+  margin: 20px;
+
+}
+
+.service-description h2 {
+  color: #264D7F;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.service-description p {
+  width: 360px;
+  color: #0F1715;
+  /* overflow-wrap: break-word; */
+  letter-spacing: .5px;
+  padding-bottom: 10px;
+
+}
+
+.highlight {
+  /* background-color: #FFF; */
+  margin-left: 10px;
+}
+
+/* package card */
+/* card begin */
+.card-higlight {
+  width: 244px;
+  height: 300px;
+  border: 1px solid #93C2FF;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #EBEDEF;
+}
+
+.package-1 {
+  width: 100%;
+  text-align: center;
+  background-color: #93C2FF;
+  padding: 10px 0;
+  color: #0F1715;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.package-1-b,
+.card-2 {
+  margin: 0;
+}
+
+.card-higlight img {
+  width: 125px;
+  margin: 0px 0;
+  margin-left: 30px;
+}
+
+.package-description {
+  text-align: center;
+}
+
+.package-description h3 {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.dashline {
+  width: 200px;
+  border: 1px dashed #264D7F;
+  margin-bottom: 10px;
+}
+
+.package-button {
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.adjust {
+  margin-top: 30px;
+}
+
+.adjust-package1 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.card-2 {
+  background-color: #B9EEE3 !important;
+}
+
+.card-border {
+  border: 1px solid #B9EEE3;
+  background-color: #EBEDEF;
+}
+
+.adjusting {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.adjust-package1-B {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+
+/* ////////////////////////////////////////// Booking page  //////////////////////////////////////////*/
+
+/* ============title-booking-page=========== */
+.title-booking {
+  color: #264D7F;
+  font-size: 36px;
+  font-weight: 700;
+
+}
+
+.sub-title-booking {
+  opacity: 50%;
+  font-size: 12px;
+}
+
+.title-line {
+  width: 100%;
+  height: 2px;
+}
+
+
+/* ============text field=========== */
+.username-input-M input {
+  border: 1px solid #4C9AFF;
+  background-color: #F7F8F8;
+}
+
+.username-input-M {
+  width: 100%;
+}
+
+.username-input-M span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #264D7F;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.username-input-M input:valid~span,
+.username-input-M input:focus~span {
+  color: #264D7F;
+  transform: translateX(10px) translateY(-9px);
+  font-size: 0.85rem;
+  padding: 0 10px;
+  background: #F7F8F8;
+  letter-spacing: 0.1rem;
+}
+
+.username-input-M input:valid,
+.username-input-M input:focus {
+  color: #264D7F;
+  border: 1px solid #264D7F;
+  opacity: 80%;
+}
+
+
+/* ============select package=========== */
+.small-title-M {
+  color: #264D7F;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* ============payment method=========== */
+
+.select-card-payment-m {
+  width: 100%;
+  padding: 10px;
+  background-color: #EBEDEF;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.master-card-m {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.master-card-m input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.select-card-payment-m img {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.booking-button-m {
+  display: flex;
+  justify-content: center;
+}
+
+/* ============booking page 2 =========== */
+.card-box-pending-m {
+  width: 376px;
+  height: 460px;
+  background-color: #DEEBFF;
+  margin-top: 100px;
+  margin-left: 7px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-box-pending-m h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 8px;
+  color: #264D7F;
+}
+
+.card-box-pending-m img {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.card-box-pending-m h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #264D7F;
+}
+
+.card-box-pending-m p {
+  font-size: 14px;
+  opacity: 50%;
+  color: #264D7F;
+  text-align: center;
+  padding: 16px;
+}
+
+/* ============package =========== */
+
+.card-higlight {
+  width: 244px;
+  height: 300px;
+  border: 1px solid #93C2FF;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.card2-highlight {
+  border: 1px solid #B9EEE3;
+}
+
+.package-1 {
+  width: 100%;
+  text-align: center;
+  background-color: #93C2FF;
+  padding: 10px 0;
+  color: #0F1715;
+  border-radius: 5px 5px 0px 0px;
+  margin: 0;
+}
+
+.package-2-m {
+  background-color: #B9EEE3;
+  margin: 0;
+}
+
+.card-higlight img {
+  width: 125px;
+  margin: 0px 0;
+  margin-left: 30px;
+}
+
+.package-description {
+  text-align: center;
+}
+
+.package-description h3 {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.dashline {
+  width: 200px;
+  border: 1px dashed #264D7F;
+  margin-bottom: 10px;
+}
+
+.package-button {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.adjust {
+  margin-top: 30px;
+}
+
+.adjust-package1 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/* .adjust-package2 {
+  margin-top: 10px;
+} */
+
+.booking-package-m {
+  margin-top: 0;
+}
+
+/*////////////////////////////////////////// Start login //////////////////////////////////////////*/
+/* text field */
+.username-input-M input {
+  border: 1px solid #4C9AFF;
+  background-color: #F7F8F8;
+}
+
+.username-input-M {
+  width: 100%;
+}
+
+.username-input-M span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #264D7F;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.username-input-M input:valid~span,
+.username-input-M input:focus~span {
+  color: #264D7F;
+  transform: translateX(10px) translateY(-9px);
+  font-size: 0.85rem;
+  padding: 0 10px;
+  background: #F7F8F8;
+  letter-spacing: 0.1rem;
+}
+
+.username-input-M input:valid,
+.username-input-M input:focus {
+  color: #264D7F;
+  border: 1px solid #264D7F;
+  opacity: 80%;
+}
+
+.title-register {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4C9AFF;
+  margin-top: 40px;
+  margin-bottom: 29px;
+}
+
+.register-button-y {
+  margin-top: 30px;
+
+}
+
+.register-button-style-y {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.line-y {
+  width: 120px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.text-signp-y {
+  font-size: 14px;
+  font-weight: 700px;
+  letter-spacing: 0.1px;
+
+}
+
+.signup-with-y {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.socialmedia-logo-y {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.to-login-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 18px;
+
+}
+
+.to-login-y>p>span>a {
+  text-decoration: none;
+  color: #4C9AFF;
+}
+
+.forget-password {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forget-password>a {
+  text-decoration: none;
+  color: #4C9AFF;
+}
+
+.login-title {
+  font-size: 36px;
+  margin-bottom: 9px;
+}
+
+.back {
+  margin-top: 10px;
+}
+
+/* ============================================== Start<<  Nilin  >>============================================== */
+/* Styling for User Profile page */
+.profiledisplay-N {
+  background: linear-gradient(180deg, #274690 0%, rgba(40, 50, 139, 0.52) 100%);
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-profile-display-N {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.inner-profile-display-N img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.inner-profile-display-N a img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Section for Tabs */
+.grid-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+.grid-container>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  height: 50px;
+  background-color: #FFFFFF;
+}
+
+.grid-container>div:hover {
+  background-color: #EBEDEF;
+}
+
+.tablinks>a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.tablinks>a:hover {
+  color: #000000;
+}
+
+.tab .tablinks:hover {
+  border-bottom: 2px solid #000000;
+  transition-duration: 0.3s;
+}
+
+/* Section for My Profile Content */
+.profile-info-N {
+  text-align: left;
+  padding-top: 10px;
+  color: #264D7F;
+  padding: 25px 32px 0px 20px;
+}
+
+.display-info-N span {
+  opacity: 70%;
+  font-weight: 400;
+  padding: 25px 15px;
+}
+
+.sever-info-N {
+  color: #B2ACB0;
+}
+
+.card-logo-N {
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+/* Section for my schedule */
+.schedule-cont {
+  margin-top: 0;
+}
+
+.display-schedule-N canvas {
+  width: 40px;
+  height: 40px;
+  background-color: #4C9AFF;
+  display: float;
+  float: left;
+  margin-left: 30px;
+}
+
+.display-schedule-N p {
+  padding-top: 10px;
+  color: #264D7F;
+  padding-left: 80px;
+}
+
+.service-title-B .N-span {
+  font-size: 24px;
+  color: #264D7F;
+}
+
+.display-past-N .display-box-N {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  color: #264D7F;
+  background-color: #EBEDEF;
+}
+
+.display-box-N p {
+  margin-top: 20px;
+  opacity: 70%;
+  text-align: center;
+}
+
+#calendar-N {
+  margin: auto;
+}
+
+/*Section for edit User profile*/
+
+.edit-field-N {
+  margin: 25px 0px;
+  width: 100%;
+}
+
+.user-dis-N input {
+  border: 1px solid #4C9AFF;
+  background-color: #F7F8F8;
+  width: 100%;
+}
+
+.user-dis-N span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  color: #264D7F;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.user-dis-N input::placeholder {
+  color: transparent;
+}
+
+.user-dis-N input:valid~span,
+.user-dis-N input:focus~span {
+  color: #264D7F;
+  transform: translateX(10px) translateY(-9px);
+  font-size: 0.85rem;
+  padding: 0 10px;
+  background: #F7F8F8;
+  letter-spacing: 0.1rem;
+}
+
+.user-dis-N input:valid,
+.user-dis-N input:focus {
+  color: #264D7F;
+  border: 1px solid #4C9AFF;
+  opacity: 80%;
+}
+
+.user-dis-N input:focus::placeholder,
+.user-dis-N input:valid::placeholder {
+  color: #264D7F;
+}
+
+#card-N1 {
+  background-image: url('./img/master-card.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#card-N2 {
+  background-image: url('./img/visa.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* Limkhy's Hospital card styling */
+.change-card-N h3 {
+  color: #264D7F;
+}
+
+/* ============================================== End<<  Nilin  >>============================================== */
+
+
+/* ////////////////////////////////////////// Limkhy  //////////////////////////////////////////*/
+/* ====================================Hospital list==================================== */
+.container-topic-K h1 {
+  text-align: center;
+  color: #264D7F;
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.container-card-K {
+  margin: 10px 10px 10px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #EBEDEF;
+  border-radius: 5px;
+}
+
+.container-card-K:active {
+  background-color: #eeeeee;
+}
+
+.container-card-title-K h2 {
+  padding-top: 10px;
+  padding-left: 0px;
+  color: #264D7F;
+  font-size: 24px;
+}
+
+.container-card-title-K h4 {
+  /* padding-top: 5px; */
+  padding-left: 12px;
+  color: #0F1E33;
+  font-size: 16px;
+}
+
+.container-img-K img {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.container-icon1 {
+  float: left;
+  padding-top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.container-info-K {
+  color: #0F1E33;
+}
+
+.container-info-K h4 {
+  font-size: 16px;
+  padding-left: 12px;
+
+}
+
+/*=====================================Interpreter List =================================== */
+
+.container-topic-int-K h1 {
+  text-align: center;
+  color: #264D7F;
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: 700;
+
+}
+
+.container-card-int-K {
+  color: #264D7F;
+  padding: 10px;
+  margin: 15px 5px 7px 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #EBEDEF;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.container-card-int-K:active {
+  background-color: #eeeeee;
+}
+
+.container-card-name-int-K {
+  text-align: center;
+}
+
+.container-card-img-int-K img {
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 0 5px;
+  border-radius: 5px;
+}
+
+.container-card-name-int-K h1 {
+  font-size: 24px;
+  padding-top: 9px;
+
+}
+
+.container-card-info-int-K {
+  margin-bottom: 5px;
+}
+
+.container-card-info-int-K p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 0;
+
+}
+
+/* ////////////////////////////////////////// Limkhy End //////////////////////////////////////////*/
+
+/* ////////////////////////////////////////// KimHouy  //////////////////////////////////////////*/
+
+/* Interpreter Detail style */
+
+.detail-info-H {
+  width: 374px;
+  height: 575px;
+  background-color: #EBEDEF;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.inter-info-H {
+  text-align: center;
+  color: #264D7F;
+}
+
+.detail-text-H {
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+.info-container-H h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #264D7F;
+}
+
+.title-H {
+  padding-top: 34px;
+  text-align: center;
+
+}
+
+.profile-image-container-H {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.profile-image-H {
+
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+
+}
+
+.detail-text-H {
+
+  text-align: left;
+
+}
+
+/* description style */
+.description-container-H {
+  width: 374px;
+  height: 180px;
+  background-color: #EBEDEF;
+  color: #264D7F;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 20px;
+
+}
+
+.description-container-H h2 {
+
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+.description-container-H p {
+
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 17px;
+
+}
+
+/* accomplishment style */
+.accom-container-H {
+  width: 374px;
+  height: 219px;
+  background-color: #EBEDEF;
+  color: #264D7F;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.accom-container-H h2 {
+
+  padding-top: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.acom-icon-H {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 43px;
+  position: relative;
+  top: -16px;
+}
+
+.acom-info-H {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.quote-H {
+  text-align: center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #264D7F;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* specialization style */
+.sp-container-H {
+  display: flex;
+  justify-content: space-around;
+  width: 384px;
+  margin-top: 30px;
+}
+
+.sp-title-H {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.specialization-container-H {
+  width: 182px;
+  height: 235px;
+  /* margin-left: 10px; */
+  border-radius: 5px;
+  background-color: #EBEDEF;
+  color: #264D7F;
+}
+
+.specialization-container-H h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.specialization-container-H ul {
+  padding-left: 20px;
+}
+
+.specialization-container-H ul li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-top: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.bullet-H {
+  margin-right: 10px;
+}
+
+.book-button-container-H {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* Style for hospital detail page */
+
+.background-H {
+  position: relative;
+}
+
+.hospital-desc-H {
+  width: 374px;
+  height: 375px;
+  background-color: #EBEDEF;
+  margin-left: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 260px;
+}
+
+.hospital-desc-title-H {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #264D7F;
+  width: 277px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hospital-info-H {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  color: #264D7F;
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-icon-H {
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: -30px;
+
+}
+
+.detail-information-H {
+  width: 374px;
+  height: 780px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #264D7F;
+  top: 290px;
+  position: relative;
+}
+
+.more-detail-H {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.detail-list-H>p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.more-detail-head-H {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.detail-list-H {
+  line-height: 22px;
+}
+
+.depart-box-H {
+  top: 310px;
+  width: auto;
+  height: 150px;
+  margin: 10px 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #264D7F;
+
+}
+
+.department-title-H>h2 {
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.department-name-H {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.department-name-H ul li {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.extra-info-H {
+  position: relative;
+  top: 330px;
+  text-align: center;
+  color: #264D7F;
+
+}
+
+.extra-info-H p {
+  margin-left: 10px;
+}
+
+.button-primary {
+  background-color: #4C9AFF;
+  border-radius: 10px;
+}
+
+.book-button-container-H {
+  position: relative;
+  top: 360px;
+  text-align: center;
+}
+
+.blank-space {
+  position: relative;
+  top: 380px;
+  height: 10;
+}
+
+
+/* ////////////////////////////////////////// KimHouy End //////////////////////////////////////////*/
+/* ////////////////////////////////////////// Homepage //////////////////////////////////////////*/
+
+/* section 1 */
+.section1-contanier-L {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 335px;
+  position: relative;
+}
+
+.text-container-L {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  margin-left: 10px;
+}
+
+.head-text-L {
+  width: 300px;
+  color: #264D7F;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.sub-text-L {
+  width: 230px;
+  color: #264D7F;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.bg-image-L {
+  width: 200px;
+  height: 335px;
+  object-fit: cover;
+  position: absolute;
+  right: 0px;
+  opacity: 70%;
+}
+
+.booking-button-L {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+
+}
+
+.booking-button-L button {
+  width: 115px;
+  height: 40px;
+}
+
+/* tab section */
+
+.grid-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  width: 414px;
+}
+
+.grid-container>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  height: 50px;
+  background-color: #FFFFFF;
+}
+
+.grid-container>div:hover {
+  background-color: #EBEDEF;
+}
+
+.tablinks>a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.tablinks>a:hover {
+  color: #000000;
+}
+
+.tab .tablinks:hover {
+  border-bottom: 2px solid #000000;
+  transition-duration: 0.3s;
+}
+
+/* section 2 */
+.hospital-desc-container-L {
+  margin-top: 30px;
+  width: 380px;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+.hospital-title-L {
+  color: #264D7F;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.sectio-title {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.hospital-desc-L {
+  color: #264D7F;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  width: 350px;
+}
+
+/* hospital carousel style */
+.hospital-name-L {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 374px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #EBEDEF;
+}
+
+.info-container-L {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%,0.25); */
+  height: 320px;
+}
+
+.photo {
+  width: 374px;
+  height: 165px;
+  object-fit: cover;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.see-detail-button-L {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  border: none;
+  padding-right: 20px;
+  width: 112px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #EBEDEF;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.sm-button-container-L {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 414px;
+}
+
+.see-more-button-L {
+  border: none;
+  width: 112px;
+  height: 65px;
+  background-color: #F7F8F8;
+  color: #4C9AFF;
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto;
+}
+
+/* card */
+.hospital-info-card-L {
+  width: 100%;
+  background-color: #EBEDEF;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 8px;
+  margin-right: 20px;
+  height: 270px;
+  width: 374px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title-L {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.card-title-L {
+  text-align: center;
+  color: #264D7F;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hospital-info-card-L ul li {
+  color: #264D7F;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 16px;
+}
+
+/* about us style */
+.hospital-desc-L span {
+  color: #4C9AFF;
+}
+
+
+/* footer style */
+.footer-L {
+  margin-top: 30px;
+  height: 600px;
+  width: 414px;
+  background-color: #4C9AFF;
+}
+
+.footer-logo-L {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.company-container-L {
+  color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.company-container-L li {
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+.social-logo-L {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.twitter-logo-L {
+  margin-top: -6px;
+}
+
+/* ============================================== Start<<  Rojeth  >>============================================== */
+.img-heroes {
+  position: relative;
+  width: 100%;
+  margin-top: -230px;
+  opacity: 60%;
+  z-index: -20;
+
+}
+
+
+.title-text-r {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: #264D7F;
+}
+
+.title-text-r h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+.title-text-r span {
+  color: #4C9AFF;
+}
+
+
+.content-text-r {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.content-blog-r {
+  padding-top: 23px;
+  margin: 20px;
+  color: #264D7F;
+}
+
+.content-blog-r span {
+  font-weight: bold;
+}
+
+.line-r {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+hr {
+  width: 70%;
+
+}
+
+
+.any-help-r {
+  text-align: center;
+}
+
+
+.width-sm-btn-r {
+  width: 72px;
+  height: 42px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* End CSS */
+
+
+
+.adjusting {
+  margin-top: 20px;
+  background-color: #fff;
+}
